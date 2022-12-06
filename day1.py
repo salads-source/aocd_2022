@@ -10,7 +10,7 @@ def parse(puzzle_input):
     return ref_list
 
 
-def find_max(input):
+def part_1(input):
     cal_max, inp = 0, parse(input)
     for i in inp:
         cov = list(map(int, i))
@@ -19,7 +19,7 @@ def find_max(input):
     return cal_max
 
 
-def find_top_three(input):
+def part_2(input):
     food_list, inp = [], parse(input)
     for i in inp:
         cov = list(map(int, i))
@@ -28,6 +28,6 @@ def find_top_three(input):
     return sum(sorted_food[:3])
 
 
-print(find_max(input))
-print(find_top_three(input))
+# print(part_1(input))
+# print(part_2(input))
 

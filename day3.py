@@ -9,7 +9,7 @@ def parse(puzzle_input):
     return ref
 
 
-def find_total(input):
+def part_1(input):
     total, inp = 0, parse(input)
     for i in inp:
         mid = len(i) // 2
@@ -21,7 +21,7 @@ def find_total(input):
     return total
 
 
-def find_total2(inout):
+def part_2(input):
     total, inp = 0, parse(input)
     for i in range(0, len(inp), 3):
         grp = [inp[i], inp[i + 1], inp[i + 2]]
@@ -31,9 +31,5 @@ def find_total2(inout):
     return total
 
 
-
-
-
-print(find_total(input))
-print(find_total2(input))
-# print(parse(input))
+# print(part_1(input))
+# print(part_2(input))

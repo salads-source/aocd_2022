@@ -8,7 +8,7 @@ def parse(puzzle_input):
     return ref
 
 
-def find_total(input):
+def part_1(input):
     total, inp = 0, parse(input)
     for i in inp:
         task = i.split(',')
@@ -20,7 +20,7 @@ def find_total(input):
     return total
 
 
-def find_total2(input):
+def part_2(input):
     total, inp = 0, parse(input)
     for i in inp:
         task = i.split(',')
@@ -32,9 +32,5 @@ def find_total2(input):
     return total
 
 
-
-
-
-# print(parse(input))
-print(find_total(input))
-print(find_total2(input))
+# print(part_1(input))
+# print(part_2(input))

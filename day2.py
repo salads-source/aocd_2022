@@ -8,7 +8,7 @@ def parse(puzzle_input):
     return ref
 
 
-def find_total(input):
+def part_1(input):
     ref_dict = {'X': 1, 'Y': 2, 'Z': 3}
     opp_dict = {'A': 'X', 'B': 'Y', 'C': 'Z'}
     total, inp = 0, parse(input)
@@ -22,7 +22,7 @@ def find_total(input):
     return total
 
 
-def find_total2(input):
+def part_2(input):
     ref_dict = {'X': 0, 'Y': 3, 'Z': 6}
     total, inp = 0, parse(input)
     for i in inp:
@@ -50,8 +50,6 @@ def find_total2(input):
     return total
 
 
-
-
-print(find_total(input))
-print(find_total2(input))
+# print(part_1(input))
+# print(part_2(input))
 

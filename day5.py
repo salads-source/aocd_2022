@@ -11,7 +11,7 @@ def parse(puzzle_input):
     return com, crate
 
 
-def final_state(input):
+def part_1(input):
     com, crate = parse(input)
     mat = []
     for i in range(1, 35, 4):
@@ -24,7 +24,7 @@ def final_state(input):
     return ''.join([i.pop() for i in mat])
 
 
-def final_state2(input):
+def part_2(input):
     com, crate = parse(input)
     mat = []
     for i in range(1, 35, 4):

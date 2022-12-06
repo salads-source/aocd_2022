@@ -8,7 +8,7 @@ def parse(puzzle_input):
     return list(ref)
 
 
-def find_marker(input):
+def part_1_or_2(input):
     pos, inp = 0, parse(input)
     while True:
         window = inp[pos: pos + 14]
@@ -18,5 +18,5 @@ def find_marker(input):
             pos += 1
     return pos + 14
 
-print(parse(input))
-print(find_marker(input))
+
+# print(part_1_or_2(input))
