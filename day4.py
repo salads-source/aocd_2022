@@ -4,7 +4,7 @@ input = get_data(day=4, year=2022)
 
 
 def parse(puzzle_input):
-    ref = puzzle_input.split('\n')
+    ref = puzzle_input.split()
     return ref
 
 
