@@ -90,6 +90,7 @@ print(f"part_1: {sum(small_dirs.values())}")
 
 size_req = 30000000 - (70000000 - parent.dir_size.get('/'))
 dir_sort = sorted([(k, v) for (k, v) in parent.dir_size.items()], key=lambda x: x[1])
+
 for path, size in dir_sort:
     if size >= size_req:
         print(f'part_2: {size}')
