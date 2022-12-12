@@ -70,7 +70,7 @@ inp = parse(input)
 # visited, head, tail = [(0, 0)], (0, 0), (0, 0)
 visited, seq = [(0, 0)], [(0, 0) for _ in range(10)]
 for command in inp:
-    com = command.split(' ')
+    com = command.split()
     for _ in range(int(com[1])):
         seq[0] = move_head(seq[0], com[0])
         for i in range(1, len(seq)):
