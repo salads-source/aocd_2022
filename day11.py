@@ -28,12 +28,12 @@ def part_1(puzzle):
 
     for i in range(8):
         monkey_commands[i].append([d for d in re.findall(r'[\+\-\*\/]', inp[i][2])][0])
-        res = [int(d) for d in re.findall('\d+', inp[i][2])]
+        res = [int(d) for d in re.findall(r'\d+', inp[i][2])]
         monkey_commands[i].append(res[0]) if len(res) >= 1 else monkey_commands[i].append('old')
-        monkey_commands[i].append([int(d) for d in re.findall('\d+', inp[i][3])][0])
-        monkey_commands[i].append([int(d) for d in re.findall('\d+', inp[i][4])][0])
-        monkey_commands[i].append([int(d) for d in re.findall('\d+', inp[i][5])][0])
-        modulo *= [int(d) for d in re.findall('\d+', inp[i][3])][0]
+        monkey_commands[i].append([int(d) for d in re.findall(r'\d+', inp[i][3])][0])
+        monkey_commands[i].append([int(d) for d in re.findall(r'\d+', inp[i][4])][0])
+        monkey_commands[i].append([int(d) for d in re.findall(r'\d+', inp[i][5])][0])
+        modulo *= [int(d) for d in re.findall(r'\d+', inp[i][3])][0]
 
     for _ in range(10000):
         for i in range(8):
@@ -58,9 +58,5 @@ def part_1(puzzle):
     return monkey_turns[0] * monkey_turns[1]
 
 
-
-
-
-
 # print(parse(input))
-print(part_1(input))
+# print(part_1(input))
