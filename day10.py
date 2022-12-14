@@ -37,7 +37,6 @@ def part_2(input):
     for command in inp:
         com = command.split()
         if com[0] == 'noop':
-            # cycle += 1
             if pixel_pos == X or pixel_pos == X + 1 or pixel_pos == X - 1:
                 row.append('#')
             else:
